@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Language Learning App</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+  <div class="container">
+    <h1>🌍 Language Learning App</h1>
+
+    <div id="streak">🔥 0-Day Streak</div>
+
+    <div class="flashcard" id="flashcard">
+      <div class="front" id="card-front">Word</div>
+      <div class="back" id="card-back">Translation</div>
+    </div>
+
+    <div class="controls">
+      <button onclick="prevCard()">⏮️ Prev</button>
+      <button onclick="flipCard()">🔁 Flip</button>
+      <button onclick="nextCard()">⏭️ Next</button>
+      <button onclick="speak()">🔈 Speak</button>
+    </div>
+
+    <form id="add-form">
+      <input type="text" id="new-word" placeholder="New Word" required>
+      <input type="text" id="new-translation" placeholder="Translation" required>
+      <button type="submit">➕ Add</button>
+    </form>
+
+    <input type="text" id="search" placeholder="🔍 Search Word...">
+    <ul id="vocab-list"></ul>
+
+    <div class="bottom-buttons">
+      <button onclick="startQuiz()">🎯 Start Quiz</button>
+      <button onclick="clearWords()">🗑️ Clear All</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
